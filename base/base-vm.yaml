@@ -56,7 +56,7 @@ spec:
         - cloudInitNoCloud:
             userData: |-
               #cloud-config
-              user: cloud-user
-              password: 'redhat1234' 
+              user: arw-user
+              password: 'arrow1234' 
               chpasswd: { expire: False }
           name: cloudinitdisk
