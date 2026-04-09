@@ -30,6 +30,8 @@ spec:
             interfaces:
             - masquerade: {}
               name: default
+            - bridge: {} 
+              name: vlan3102
             rng: {}
           features:
             smm:
@@ -44,6 +46,9 @@ spec:
         networks:
         - name: default
           pod: {}
+        - name: vlan3102 
+          multus: 
+            networkName: vlan3102-server
         volumes:
         - persistentVolumeClaim:
               claimName: base-vm-disk
